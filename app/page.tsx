@@ -21,7 +21,7 @@ export default function Home() {
         clearInterval(intervalRef.current);
       }
     };
-  }, [isRunning]);
+  }, [isRunning, speed]);
   const handleEvolution = () => {
     setGrid((prevGrid) => {
       const tempGrid = prevGrid.map((row) => [...row]);
